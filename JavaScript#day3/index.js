@@ -27,7 +27,7 @@
       } while (i < 3);
 
       //For syntax
-      for (begin, condition, step) {
+      for (begin; condition; step) {
 
       }
 
