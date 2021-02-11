@@ -30,3 +30,23 @@
   for (let i in passengers) {
     console.log("Passenger: " + passengers[i] + " boarded");
   }
+
+  //for looping using an array with objects
+  const passengers = [
+    {
+      name: "Karter Hudson",
+      ticketNumber: 12
+    },
+    {
+      name: "Aahil Faulkner",
+      ticketNumber: 14
+    },
+    {
+      name: "Coby Mcarthur",
+      ticketNumber: 16
+    }
+  ];
+
+  for (let passenger of passengers) {
+    console.log("Passenger: " + passenger.name + " ticket number " + passenger.ticketNumber);
+  }
