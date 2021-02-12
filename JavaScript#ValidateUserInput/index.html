@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Validate User Input</title>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #form {
+        padding: 15px;
+      }
+
+      #form * {
+        margin: 5px;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+      }
+
+      #sendPassword {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form id="form">
+      <div class="form-group">
+        <label for="password" style="font-size: 25px;">Password</label>
+        <input type="password" id="password">
+        <p style="font-size: 12px;">Please enter a password between 6 and 12 characters</p>
+      </div>
+      <div class="form-group">
+        <button type="button" id="sendPassword" disabled="true">Send Password</button>
+      </div>
+    </form>
+
+    <script src="validateInput.js"></script>
+  </body>
+</html>
