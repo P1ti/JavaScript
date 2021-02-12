@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Read User Input with JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <form id="form">
+        <div class="form-group">
+          <label for="first-name">First name</label>
+          <input id="first-name" type="text">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last name</label>
+          <input id="last-name" type="text">
+        </div>
+        <div class="form-group">
+          <button id="loginBtn" type="button">Login</button>
+        </div>
+      </form>
+
+      <div class="displayInfos">
+        <div class="displayInfos-group">
+          <p>First Name</p>
+          <p id="first-name-result"></p>
+        </div>
+        <div class="displayInfos-group">
+          <p>Last Name</p>
+          <p id="last-name-result"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="readUserInfo.js"></script>
+  </body>
+</html>
