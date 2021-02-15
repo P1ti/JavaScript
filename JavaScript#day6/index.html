@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript#day6</title>
+
+    <style>
+      #flyjet {
+        width: 40px; // change this value onclick
+        height: 24px; //change this value onclick
+        transition: 3s cubic-bezier(0, .5, .5, 1);
+      }
+
+      #flyjet.animate {
+        width: 400px;
+        height: 240px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <img id="flyjet" src="https://en.js.cx/clipart/flyjet.jpg">
+
+    <script>
+      const flyjet = document.getElementById('flyjet');
+      flyjet.addEventListener('click', () => {
+        flyjet.classList.add('animate');
+      });
+    </script>
+  </body>
+</html>
